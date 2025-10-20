@@ -8,4 +8,4 @@ Automated tests cover customer login/logout, manager login and customer creation
 
 CI/CD integration with GitHub Actions will be added to run tests automatically on each push.  
 
-**Author:** Cornea Levente
+**Author:** Levente Cornea
