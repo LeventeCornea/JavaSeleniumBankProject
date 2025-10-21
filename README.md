@@ -13,11 +13,11 @@ This project includes a **GitHub Actions workflow** that automatically runs the 
 The workflow file is located at:
 .github/workflows/ci.yml
 
-
 The pipeline:
 - Sets up the Java environment.
 - Builds the project with Maven.
 - Executes all Selenium test cases.
 - Displays results directly in the **Actions** tab on GitHub.
+
 
 **Author:** Levente Cornea
