@@ -1,4 +1,5 @@
 # 🏦 Java Selenium Banking Project
+![Java Selenium Tests](https://github.com/CorneaLevente/Java_Selenium_Banking_Project/actions/workflows/ci.yml/badge.svg)
 
 This project automates end-to-end functional testing of the **GlobalSQA Banking Project** web application (https://www.globalsqa.com/angularJs-protractor/BankingProject/) using **Java + Selenium WebDriver**. It validates key customer and manager workflows including login, account creation, deposits, withdrawals, and transaction verification.  
 
@@ -19,5 +20,6 @@ The pipeline:
 - Executes all Selenium test cases.
 - Displays results directly in the **Actions** tab on GitHub.
 
+---
 
 **Author:** Levente Cornea
