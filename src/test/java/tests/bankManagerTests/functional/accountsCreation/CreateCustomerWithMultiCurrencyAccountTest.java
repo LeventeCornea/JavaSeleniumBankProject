@@ -9,7 +9,7 @@ import java.awt.*;
 public class CreateCustomerWithMultiCurrencyAccountTest extends SharedData {
 
     @Test
-    public void testMethod() throws AWTException{
+    public void testMethod(){
 
         IndexPage indexPage = new IndexPage(driver);
         indexPage.clickManagerLoginMenu();

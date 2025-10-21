@@ -9,7 +9,7 @@ import java.awt.*;
 public class
 ExistingCustomerAccountDepositTest extends SharedData {
     @Test
-    public void testMethod() throws AWTException {
+    public void testMethod(){
 
         IndexPage indexPage = new IndexPage(driver);
         indexPage.clickCustomerLogin();

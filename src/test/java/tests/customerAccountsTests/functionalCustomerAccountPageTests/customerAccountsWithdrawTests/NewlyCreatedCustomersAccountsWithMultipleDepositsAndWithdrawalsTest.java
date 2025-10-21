@@ -10,7 +10,7 @@ import java.awt.event.KeyEvent;
 public class NewlyCreatedCustomersAccountsWithMultipleDepositsAndWithdrawalsTest extends SharedData {
 
     @Test
-    public void methodTest() throws AWTException{
+    public void methodTest(){
         IndexPage indexPage = new IndexPage(driver);
         indexPage.clickManagerLoginMenu();
 
@@ -37,9 +37,6 @@ public class NewlyCreatedCustomersAccountsWithMultipleDepositsAndWithdrawalsTest
             addCustomerPage.clickAddCustomerButton();
         }
 
-        Robot robot = new Robot();
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
 
         try {
             Thread.sleep(2000);
@@ -58,8 +55,6 @@ public class NewlyCreatedCustomersAccountsWithMultipleDepositsAndWithdrawalsTest
             openAccountPage.selectButton();
         }
 
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
 
         try {
             Thread.sleep(2000);

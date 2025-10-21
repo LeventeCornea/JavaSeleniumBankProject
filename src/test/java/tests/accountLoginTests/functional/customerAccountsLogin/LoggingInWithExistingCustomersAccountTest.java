@@ -12,7 +12,7 @@ import java.awt.*;
 public class LoggingInWithExistingCustomersAccountTest extends SharedData {
 
     @Test
-    public void testMethod() throws AWTException {
+    public void testMethod(){
 
         IndexPage indexPage = new IndexPage(driver);
         indexPage.clickCustomerLogin();

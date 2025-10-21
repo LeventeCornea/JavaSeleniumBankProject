@@ -10,7 +10,7 @@ import java.awt.event.KeyEvent;
 public class NewlyCreatedCustomerAccountDepositAndWithdrawTest extends SharedData {
 
     @Test
-    public void testMethod() throws AWTException {
+    public void testMethod(){
         IndexPage indexPage = new IndexPage(driver);
         indexPage.clickManagerLoginMenu();
 
@@ -32,9 +32,6 @@ public class NewlyCreatedCustomerAccountDepositAndWithdrawTest extends SharedDat
         addCustomerPage.fillPostCode(postCodeValue);
         addCustomerPage.clickAddCustomerButton();
 
-        Robot robot = new Robot();
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
 
         try {
             Thread.sleep(2000);
@@ -49,8 +46,6 @@ public class NewlyCreatedCustomerAccountDepositAndWithdrawTest extends SharedDat
         openAccountPage.selectCurrency(currencyValue);
         openAccountPage.selectButton();
 
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
 
         try {
             Thread.sleep(2000);

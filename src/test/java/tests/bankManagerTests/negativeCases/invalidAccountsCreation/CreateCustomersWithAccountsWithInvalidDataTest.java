@@ -1,5 +1,7 @@
 package tests.bankManagerTests.negativeCases.invalidAccountsCreation;
 
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.AddCustomerPage;
@@ -13,7 +15,7 @@ import java.awt.event.KeyEvent;
 public class CreateCustomersWithAccountsWithInvalidDataTest extends SharedData {
 
     @Test
-    public void testMethod() throws AWTException {
+    public void testMethod(){
 
         IndexPage indexPage = new IndexPage(driver);
         indexPage.clickManagerLoginMenu();
@@ -32,11 +34,8 @@ public class CreateCustomersWithAccountsWithInvalidDataTest extends SharedData {
         addCustomerPage.fillFirstName(firstNameValue1);
         addCustomerPage.fillLastName(lastNameValue1);
         addCustomerPage.fillPostCode(postCodeValue1);
-
-
-        Robot robot = new Robot();
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
+        Actions actions = new Actions(driver);
+        actions.sendKeys(Keys.ENTER).perform();
 
         String alertText1 = addCustomerPage.getAlertTextAndAccept();
         System.out.println(" → ALERT SAYS: " + alertText1);
@@ -44,9 +43,7 @@ public class CreateCustomersWithAccountsWithInvalidDataTest extends SharedData {
         addCustomerPage.fillFirstName(firstNameValue1);
         addCustomerPage.fillLastName(lastNameValue1);
         addCustomerPage.fillPostCode(postCodeValue2);
-
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
+        actions.sendKeys(Keys.ENTER).perform();
 
         String alertText2 = addCustomerPage.getAlertTextAndAccept();
         System.out.println(" → ALERT SAYS: " + alertText2);
@@ -54,9 +51,7 @@ public class CreateCustomersWithAccountsWithInvalidDataTest extends SharedData {
         addCustomerPage.fillFirstName(firstNameValue2);
         addCustomerPage.fillLastName(lastNameValue1);
         addCustomerPage.fillPostCode(postCodeValue1);
-
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
+        actions.sendKeys(Keys.ENTER).perform();
 
         String alertText3 = addCustomerPage.getAlertTextAndAccept();
         System.out.println(" → ALERT SAYS: " + alertText3);
@@ -64,10 +59,7 @@ public class CreateCustomersWithAccountsWithInvalidDataTest extends SharedData {
         addCustomerPage.fillFirstName(firstNameValue1);
         addCustomerPage.fillLastName(lastNameValue2);
         addCustomerPage.fillPostCode(postCodeValue1);
-
-
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
+        actions.sendKeys(Keys.ENTER).perform();
 
         String alertText4 = addCustomerPage.getAlertTextAndAccept();
         System.out.println(" → ALERT SAYS: " + alertText4);
@@ -75,9 +67,7 @@ public class CreateCustomersWithAccountsWithInvalidDataTest extends SharedData {
         addCustomerPage.fillFirstName(firstNameValue2);
         addCustomerPage.fillLastName(lastNameValue2);
         addCustomerPage.fillPostCode(postCodeValue1);
-
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
+        actions.sendKeys(Keys.ENTER).perform();
 
         String alertText5 = addCustomerPage.getAlertTextAndAccept();
         System.out.println(" → ALERT SAYS: " + alertText5);
@@ -85,9 +75,7 @@ public class CreateCustomersWithAccountsWithInvalidDataTest extends SharedData {
         addCustomerPage.fillFirstName(firstNameValue1);
         addCustomerPage.fillLastName(lastNameValue2);
         addCustomerPage.fillPostCode(postCodeValue2);
-
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
+        actions.sendKeys(Keys.ENTER).perform();
 
         String alertText6 = addCustomerPage.getAlertTextAndAccept();
         System.out.println(" → ALERT SAYS: " + alertText6);
@@ -95,9 +83,7 @@ public class CreateCustomersWithAccountsWithInvalidDataTest extends SharedData {
         addCustomerPage.fillFirstName(firstNameValue2);
         addCustomerPage.fillLastName(lastNameValue1);
         addCustomerPage.fillPostCode(postCodeValue2);
-
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
+        actions.sendKeys(Keys.ENTER).perform();
 
         String alertText7 = addCustomerPage.getAlertTextAndAccept();
         System.out.println(" → ALERT SAYS: " + alertText7);

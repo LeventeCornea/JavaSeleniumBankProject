@@ -14,7 +14,7 @@ import java.awt.event.KeyEvent;
 public class CreateCustomerWithUnavailableCurrencyTest extends SharedData {
 
     @Test
-    public void testMethod() throws AWTException {
+    public void testMethod(){
 
         IndexPage indexPage = new IndexPage(driver);
         indexPage.clickManagerLoginMenu();
@@ -34,9 +34,6 @@ public class CreateCustomerWithUnavailableCurrencyTest extends SharedData {
         addCustomerPage.fillPostCode(postCodeValue);
         addCustomerPage.clickAddCustomerButton();
 
-        Robot robot = new Robot();
-        robot.keyPress(KeyEvent.VK_ENTER);
-        robot.keyRelease(KeyEvent.VK_ENTER);
 
         try {
             Thread.sleep(2000);

@@ -13,7 +13,7 @@ import java.awt.*;
 public class OpenAccountWithoutCurrencyTest extends SharedData {
 
     @Test
-    public void testMethod() throws AWTException {
+    public void testMethod(){
 
         String firstNameValue = "Harry";
         String lastNameValue = "Potter";

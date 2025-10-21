@@ -10,7 +10,7 @@ import java.awt.*;
 public class CreateDuplicateCustomerWithAccountTest extends SharedData{
 
     @Test
-    public void testMethod() throws AWTException {
+    public void testMethod(){
 
 
         IndexPage indexPage = new IndexPage(driver);

@@ -16,11 +16,8 @@ public class SharedData {
 
     @BeforeMethod
     public void prepareEnvironment(){
-        System.setProperty("java.awt.headless", "true");
-
         ChromeOptions options = new ChromeOptions();
 
-        options.addArguments("--headless=new");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--user-data-dir=/tmp/chrome-user-data-" + System.currentTimeMillis());

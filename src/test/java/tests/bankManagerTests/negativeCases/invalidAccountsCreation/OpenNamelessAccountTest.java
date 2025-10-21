@@ -12,7 +12,7 @@ import java.awt.*;
 public class OpenNamelessAccountTest extends SharedData {
 
     @Test
-    public void testMethod() throws AWTException {
+    public void testMethod(){
 
         String currencyValue = "Dollar";
 
