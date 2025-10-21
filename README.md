@@ -20,6 +20,4 @@ The pipeline:
 - Executes all Selenium test cases.
 - Displays results directly in the **Actions** tab on GitHub.
 
----
-
 **Author:** Levente Cornea
