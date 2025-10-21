@@ -1,13 +1,12 @@
 package sharedData;
 
-
 import loggerUtility.LoggerUtility;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pages.IndexPage;
-
 
 public class SharedData {
 
@@ -17,7 +16,14 @@ public class SharedData {
 
     @BeforeMethod
     public void prepareEnvironment(){
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--user-data-dir=/tmp/chrome-user-data-" + System.currentTimeMillis());
+
+        driver = new ChromeDriver(options);
         driver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
         driver.manage().window().maximize();
 
@@ -27,6 +33,8 @@ public class SharedData {
 
     @AfterMethod
     public void clearEnvironment(){
-        driver.quit();
+        if(driver != null){
+            driver.quit();
+        }
     }
 }
